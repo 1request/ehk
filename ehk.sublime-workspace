@@ -1,0 +1,718 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"digi",
+				"digitalArray	[]"
+			],
+			[
+				"dig",
+				"digitalArray	[]"
+			],
+			[
+				"di",
+				"digitString	(?)"
+			],
+			[
+				"tenth",
+				"tenth	(num)"
+			],
+			[
+				"num",
+				"numConverter(num)"
+			],
+			[
+				"is",
+				"assert.isTrue"
+			],
+			[
+				"dealer",
+				"dealerHand"
+			],
+			[
+				"handle",
+				"handleHand"
+			],
+			[
+				"stric",
+				"assert.strictEqual"
+			],
+			[
+				"play",
+				"playerHand"
+			],
+			[
+				"input",
+				"input	(num)"
+			],
+			[
+				"son",
+				"songQueue	(?)"
+			],
+			[
+				"counter",
+				"counterArr	[]"
+			],
+			[
+				"load",
+				"loadAllMessage()"
+			],
+			[
+				"room",
+				"roomFilter	(str)"
+			],
+			[
+				"type",
+				"typeof  (keyword)"
+			],
+			[
+				"score",
+				"scoreboard"
+			],
+			[
+				"soc",
+				"scoreTicker()"
+			],
+			[
+				"coll",
+				"collisionCount	(num)"
+			],
+			[
+				"inn",
+				"innerWidth  (variable)"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"user",
+				"userPosition"
+			],
+			[
+				"start",
+				"startingCol"
+			],
+			[
+				"startin",
+				"startingRow"
+			],
+			[
+				"diag",
+				"diagonal"
+			],
+			[
+				"rounds",
+				"rounds"
+			],
+			[
+				"Rock",
+				"rockPaperScissors"
+			],
+			[
+				"rock",
+				"rockPaperScissors"
+			],
+			[
+				"before",
+				"beforeeach	Before Each"
+			],
+			[
+				"O",
+				"assert.typeOf"
+			],
+			[
+				"new",
+				"newPair"
+			],
+			[
+				"t",
+				"this"
+			],
+			[
+				"return",
+				"return"
+			],
+			[
+				"ar",
+				"arguments"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"pro",
+				"propertyName"
+			],
+			[
+				"inde",
+				"indexOf"
+			],
+			[
+				"eq",
+				"equality"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"li",
+				"list-style"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"border-bott",
+				"border-bottom-color"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"reply",
+				"replyMessageForm"
+			],
+			[
+				"RECE",
+				"receiverId"
+			],
+			[
+				"message",
+				"message"
+			],
+			[
+				"sender",
+				"senderId"
+			],
+			[
+				"pr",
+				"preventDefault"
+			],
+			[
+				"bakc",
+				"background-image"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"bac",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 137.0,
+		"selected_items":
+		[
+			[
+				"fooot",
+				"Floobits - Join Workspace"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"setj",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"set",
+				"Set Syntax: HTML"
+			],
+			[
+				"packages",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"flootbots",
+				"Floobits - Join Recent Workspace"
+			],
+			[
+				"open in",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"js	",
+				"JSLint"
+			],
+			[
+				"js",
+				"JSLint"
+			],
+			[
+				"jslint",
+				"JSLint"
+			],
+			[
+				"browse",
+				"Preferences: Browse Packages"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"sublime.packages_path()",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Victor/Workspace/ehk",
+		"/Users/Victor/Workspace/ehk/.meteor/local",
+		"/Users/Victor/Workspace/ehk/client",
+		"/Users/Victor/Workspace/ehk/client/views",
+		"/Users/Victor/Workspace/ehk/client/views/home"
+	],
+	"file_history":
+	[
+		"/Users/Victor/Workspace/ehk/ehk.sublime-project",
+		"/Users/Victor/Workspace/ehk/client/app.html",
+		"/Users/Victor/Workspace/ehk/client/views/home/home.html",
+		"/Users/Victor/Workspace/ehk/.git/COMMIT_EDITMSG",
+		"/Users/Victor/Workspace/floobits/HackReactor/2014-10-blackjack-dmitri-victor/.git/COMMIT_EDITMSG",
+		"/Users/Victor/Workspace/2014-10-toy-problems/telephoneWords/spec/telephoneWords.js",
+		"/Users/Victor/Workspace/2014-10-toy-problems/telephoneWords/telephoneWords.js",
+		"/Users/Victor/Workspace/2014-10-toy-problems/numberToEnglish/numberToEnglish.js",
+		"/Users/Victor/Workspace/backbone-tutorial/.git/COMMIT_EDITMSG",
+		"/Users/Victor/Workspace/appname/.meteor/local/build/programs/server/node_modules/phantomjs/install.js",
+		"/Users/Victor/Workspace/Solutions/insertionSort.js",
+		"/Users/Victor/Workspace/wit/both/router/invites/invites_now.js",
+		"/Users/Victor/Workspace/wit/both/router/invite_tags.js",
+		"/Users/Victor/Workspace/appname/.meteor/local/build/programs/server/node_modules/phantomjs/node_modules/unzip/node_modules/binary/test/into_stream.js",
+		"/Users/Victor/Workspace/2014-10-blackjack/index.html",
+		"/Users/Victor/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Victor/Workspace/appname/.meteor/local/build/programs/server/node_modules/cordova/node_modules/cordova-lib/node_modules/npm/test/tap/noargs-install-config-save.js",
+		"/Users/Victor/Workspace/appname/.meteor/local/build/programs/server/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/node_modules/fstream/lib/collect.js",
+		"/Users/Victor/Workspace/floobits/HackReactor/afterHours/sublimeSetUp.js",
+		"/Users/Victor/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/Victor/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/Victor/Workspace/floobits/HackReactor/2014-10-blackjack-dmitri-victor/src/models/App.coffee",
+		"/Users/Victor/Workspace/floobits/HackReactor/2014-10-blackjack-dmitri-victor/src/collections/Hand.coffee",
+		"/Users/Victor/Workspace/floobits/HackReactor/2014-10-blackjack-dmitri-victor/compiled/spec/AppSpec.js",
+		"/Users/Victor/Workspace/floobits/HackReactor/2014-10-blackjack-dmitri-victor/spec/AppSpec.coffee",
+		"/Users/Victor/Workspace/floobits/HackReactor/2014-10-blackjack-dmitri-victor/spec/HandSpec.coffee",
+		"/Users/Victor/Workspace/floobits/HackReactor/2014-10-blackjack-dmitri-victor/src/collections/Deck.coffee",
+		"/Users/Victor/Workspace/floobits/HackReactor/2014-10-blackjack-dmitri-victor/src/models/Game.coffee",
+		"/Users/Victor/Workspace/floobits/HackReactor/2014-10-blackjack-dmitri-victor/index.html",
+		"/Users/Victor/Workspace/floobits/HackReactor/2014-10-blackjack-dmitri-victor/compiled/spec/HandSpec.js",
+		"/Users/Victor/Workspace/floobits/HackReactor/2014-10-blackjack-dmitri-victor/compiled/src/collections/Hand.js",
+		"/Users/Victor/Workspace/floobits/HackReactor/2014-10-blackjack-dmitri-victor/SpecRunner.html",
+		"/Users/Victor/Workspace/floobits/HackReactor/2014-10-blackjack-dmitri-victor/spec/DeckSpec.coffee",
+		"/Users/Victor/Workspace/floobits/HackReactor/2014-10-blackjack-dmitri-victor/lib/sinon/sinon-chai.js",
+		"/Users/Victor/Workspace/floobits/HackReactor/2014-10-blackjack-dmitri-victor/lib/sinon/sinon.js",
+		"/Users/Victor/Workspace/2014-10-toy-problems/numberToEnglish/spec/numberToEnglish.js",
+		"/Users/Victor/Workspace/2014-10-toy-problems/sumArray/sumArray.js",
+		"/Users/Victor/Workspace/2014-10-mytunes/.git/COMMIT_EDITMSG",
+		"/Users/Victor/Workspace/2014-10-mytunes/client/views/PlayerView.js",
+		"/Users/Victor/Workspace/2014-10-mytunes/test/spec/SongQueueSpec.js",
+		"/Users/Victor/Workspace/2014-10-mytunes/client/models/SongModel.js",
+		"/Users/Victor/Workspace/2014-10-mytunes/client/models/AppModel.js",
+		"/Users/Victor/Workspace/2014-10-mytunes/client/collections/SongQueue.js",
+		"/Users/Victor/Workspace/2014-10-mytunes/client/views/AppView.js",
+		"/Users/Victor/Workspace/2014-10-mytunes/client/views/SongQueueView.js",
+		"/Users/Victor/Workspace/2014-10-mytunes/test/spec/PlayerViewSpec.js",
+		"/Users/Victor/Workspace/2014-10-mytunes/test/spec/SongSpec.js",
+		"/Users/Victor/Workspace/2014-10-mytunes/client/views/LibraryEntryView.js",
+		"/Users/Victor/Workspace/2014-10-mytunes/client/views/SongQueueEntryView.js",
+		"/Users/Victor/Workspace/2014-10-mytunes/client/collections/Songs.js",
+		"/Users/Victor/Workspace/2014-10-mytunes/client/views/LibraryView.js",
+		"/Users/Victor/Workspace/2014-10-toy-problems/characterFrequency/bower_components/chai/sauce.browsers.js",
+		"/Users/Victor/Workspace/2014-10-toy-problems/characterFrequency/bower_components/chai/README.md",
+		"/Users/Victor/Workspace/2014-10-toy-problems/characterFrequency/bower.json",
+		"/Users/Victor/Workspace/2014-10-toy-problems/evenOccurrence/evenOccurrence.js",
+		"/Users/Victor/Workspace/2014-10-toy-problems/evenOccurrence/bower_components/chai/package.json",
+		"/Users/Victor/Workspace/2014-10-toy-problems/rockPaperScissors/bower_components/chai/ReleaseNotes.md",
+		"/Users/Victor/Workspace/2014-10-toy-problems/rockPaperScissors/index.html",
+		"/Users/Victor/Workspace/awesomeChatApp/awesomeChatApp.html",
+		"/Users/Victor/Workspace/2014-10-toy-problems/treeMap/spec/treeMap.js",
+		"/Users/Victor/Workspace/2014-10-toy-problems/treeMap/treeMap.js",
+		"/Users/Victor/Workspace/hrr2demo/.git/COMMIT_EDITMSG",
+		"/Users/Victor/Workspace/hrr2demo/client/index.html",
+		"/Users/Victor/Workspace/hrr2demo/client/messages/messages.js",
+		"/Users/Victor/Workspace/hrr2demo/client/input/input.js",
+		"/Users/Victor/Workspace/hrr2demo/server/accounts.js",
+		"/Users/Victor/Workspace/hrr2demo/README.md",
+		"/Users/Victor/Workspace/hrr2demo/client/input/input.html",
+		"/Users/Victor/Workspace/hrr2demo/client/styles/styles.css",
+		"/Users/Victor/Workspace/hrr2demo/client/messages/messages.html",
+		"/Users/Victor/Workspace/hrr2demo/client/messages.js",
+		"/Users/Victor/Workspace/hrr2demo/client/input.html",
+		"/Users/Victor/Workspace/hrr2demo/model.js",
+		"/Users/Victor/Workspace/hrr2demo/client/input.js",
+		"/Users/Victor/Workspace/hrr2demo/client/messages.html",
+		"/Users/Victor/Workspace/hrr2demo/server/collection.js",
+		"/Users/Victor/Workspace/Solutions/chatterbox2.js",
+		"/Users/Victor/Workspace/Solutions/chatterbox1.js",
+		"/Users/Victor/Workspace/2014-10-spine/tutorial/1-rendering.html",
+		"/Users/Victor/Workspace/2014-10-spine/tutorial/0-models-and-events.html",
+		"/Users/Victor/Workspace/2014-10-toy-problems/insertionSort/insertionSort.js",
+		"/Users/Victor/Workspace/2014-10-chatterbox-client/client/index.html",
+		"/Users/Victor/Workspace/2014-10-chatterbox-client/client/scripts/app.js",
+		"/Users/Victor/Workspace/2014-10-chatterbox-client/SpecRunner.html",
+		"/Users/Victor/Workspace/2014-10-chatterbox-client/bower.json",
+		"/Users/Victor/Workspace/2014-10-self-assessments-week-02/d3-describe/d3-describe.js",
+		"/Users/Victor/Workspace/2014-10-self-assessments-week-02/js-inheritance-pseudo-classical/js-inheritance-pseudo-classical.js",
+		"/Users/Victor/Workspace/2014-10-self-assessments-week-02/algo-find-dup-char/algo-find-dup-char.js",
+		"/Users/Victor/Workspace/2014-10-self-assessments-week-02/algo-complexity/complexityAnalysis.js",
+		"/Users/Victor/Workspace/2014-10-self-assessments-week-02/algo-complexity/algo-complexity.js",
+		"/Users/Victor/Workspace/watJS/.git/COMMIT_EDITMSG",
+		"/Users/Victor/Workspace/Solutions/watchout.js",
+		"/Users/Victor/Workspace/2014-10-watchout/.git/COMMIT_EDITMSG",
+		"/Users/Victor/Workspace/stackoverflow/client/stackoverflow.html",
+		"/Users/Victor/Workspace/stackoverflow/server/questions.js",
+		"/Users/Victor/Workspace/stackoverflow/stackoverflow.css",
+		"/Users/Victor/Workspace/stackoverflow/client/stackoverflow.js",
+		"/Users/Victor/Workspace/stackoverflow/stackoverflow.js",
+		"/Users/Victor/Workspace/stackoverflow/stackoverflow.html",
+		"/Users/Victor/Workspace/stackoverflow/client/app.html",
+		"/Users/Victor/Workspace/2014-10-watchout/practice.html",
+		"/Users/Victor/Workspace/2014-10-watchout/practice.js",
+		"/Users/Victor/Workspace/2014-10-watchout/styles.css",
+		"/Users/Victor/Workspace/2014-10-watchout/watchout.js",
+		"/Users/Victor/Workspace/2014-10-toy-problems/evenOccurrence/bower_components/chai/sauce.browsers.js",
+		"/Users/Victor/Workspace/2014-10-toy-problems/.git/MERGE_MSG",
+		"/Users/Victor/Workspace/2014-10-toy-problems/primeTester/spec/primeTester.js",
+		"/Users/Victor/Workspace/2014-10-toy-problems/primeTester/primeTester.js",
+		"/Users/Victor/Workspace/Solutions/n-queens.js",
+		"/Users/Victor/Workspace/2014-10-n-queens/.git/COMMIT_EDITMSG",
+		"/Users/Victor/Workspace/2014-10-n-queens/spec/solversSpec.js",
+		"/Users/Victor/Workspace/2014-10-n-queens/src/Board.js",
+		"/Users/Victor/Workspace/2014-10-n-queens/src/solvers.js",
+		"/Users/Victor/Workspace/2014-10-n-queens/spec/BoardViewSpec.js",
+		"/Users/Victor/Workspace/Solutions/subclass-dance-party.js",
+		"/Users/Victor/Workspace/2014-10-toy-problems/evenOccurrence/spec/evenOccurrence.js",
+		"/Users/Victor/Workspace/Solutions/rockPaperScissors.js",
+		"/Users/Victor/Workspace/2014-10-toy-problems/.git/COMMIT_EDITMSG",
+		"/Users/Victor/Workspace/floobits/HackReactor/SprintBox/2014-10-subclass-dance-party/animate.css",
+		"/Users/Victor/Workspace/floobits/HackReactor/SprintBox/2014-10-subclass-dance-party/src/init.js",
+		"/Users/Victor/Workspace/floobits/HackReactor/SprintBox/2014-10-subclass-dance-party/src/stupidHeroDancer.js",
+		"/Users/Victor/Workspace/floobits/HackReactor/SprintBox/2014-10-subclass-dance-party/styles.css",
+		"/Users/Victor/Workspace/floobits/HackReactor/SprintBox/2014-10-subclass-dance-party/dancefloor.html",
+		"/Users/Victor/Workspace/floobits/HackReactor/SprintBox/2014-10-subclass-dance-party/src/dancer.js",
+		"/Users/Victor/Workspace/floobits/HackReactor/SprintBox/2014-10-subclass-dance-party/src/sexyHeroDancer.js",
+		"/Users/Victor/Workspace/floobits/HackReactor/SprintBox/2014-10-subclass-dance-party/src/superHeroDancer.js",
+		"/Users/Victor/Workspace/floobits/HackReactor/SprintBox/2014-10-subclass-dance-party/src/blinkyDancer.js",
+		"/Users/Victor/Workspace/floobits/HackReactor/SprintBox/2014-10-subclass-dance-party/spec/blinkyDancerSpec.js"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"i",
+			"input",
+			"numConverter",
+			") ",
+			"numConverter(tenth",
+			"theme",
+			"app",
+			"counter",
+			"true",
+			"sumArray",
+			"true",
+			"sumArray",
+			"([",
+			"true",
+			"sumArray",
+			"true",
+			"sumArray",
+			"3",
+			"true",
+			"sumArray",
+			".on",
+			"Comment",
+			") ",
+			"newTree",
+			"*",
+			"*   ",
+			"\n*",
+			"counterArr",
+			"objectId",
+			"uniqueRooms",
+			"app.roomFilter",
+			"characterFrequency",
+			"') ",
+			"characterFrequency",
+			"characterFrequency('miaaiaaippi')",
+			"here",
+			"refreshMessage",
+			"refreshMessages",
+			"submit",
+			"addMessage",
+			"fetch",
+			"high",
+			"setInterval",
+			"rand",
+			"xLocation",
+			"console.log",
+			"xEvent",
+			"drag",
+			"noOfQueens",
+			"console.log",
+			"board",
+			"Board.js:274",
+			"Board",
+			"console.log",
+			"this.get",
+			"i",
+			"0",
+			"results",
+			"BlinkyDancer",
+			"console.log",
+			"value",
+			"undefined",
+			"stackMethods",
+			"queueMethods",
+			"stackMethods",
+			"_.contains",
+			"contains",
+			"each",
+			"contains",
+			"submodule",
+			"module",
+			"invite",
+			"invites",
+			"href",
+			"margin-top: 18px !important;",
+			"dropdown",
+			"dropdown-menu",
+			"limit",
+			"now",
+			"mailchimp",
+			"search-button",
+			"fonts",
+			"areas",
+			"Bedrooms",
+			"search",
+			"navbar",
+			"message",
+			".tt-query",
+			".typeahead,\n.tt-query,\n.tt-hint {\n  width: 396px;\n  height: 30px;\n  padding: 8px 12px;\n  font-size: 24px;\n  line-height: 30px;\n  border: 2px solid #ccc;\n  -webkit-border-radius: 8px;\n  -moz-border-radius: 8px;\n  border-radius: 8px;\n  outline: none;\n}",
+			"img",
+			"lg",
+			"carousel-cap",
+			"carousel-caption",
+			"custom",
+			"carousel-caption",
+			"caption",
+			"img",
+			"downvote",
+			"view-discussion",
+			"features",
+			"twitter-typeahead",
+			"write",
+			"Buy",
+			"template",
+			"reply",
+			"val",
+			"console.log",
+			"message",
+			"high",
+			"tags",
+			"message",
+			"listing-item",
+			"day",
+			"img",
+			"url",
+			"listing"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "ehk.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 189.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
