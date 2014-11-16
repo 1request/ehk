@@ -6,3 +6,10 @@
 meteor-platform
 autopublish
 insecure
+less
+nemo64:bootstrap
+iron:router
+accounts-ui
+mrt:font-awesome-4-less
+accounts-password
+
