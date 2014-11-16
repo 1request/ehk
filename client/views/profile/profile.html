@@ -1,3 +1,33 @@
 <template name="Profile">
-  <h1>Profile</h1>
+  <div class="container">
+    <form role="form">
+      <div class="form-group">
+        <label for="username">Profile Name</label>
+        <input type="username" class="form-control" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="pitch">Elevator pitch</label>
+        <textarea class="form-control" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputFile">Profile image upload</label>
+        <input type="file">
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> JavaScript
+         </label>
+         <label>
+          <input type="checkbox"> Ruby
+         </label>
+         <label>
+          <input type="checkbox"> Rails
+         </label>
+         <label>
+          <input type="checkbox"> MeteorJS
+        </label>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+   </div>
 </template>
