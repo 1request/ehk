@@ -32,3 +32,15 @@ ProfileSchema = new SimpleSchema({
 });
 
 Profiles.attachSchema(ProfileSchema);
+
+Profiles.allow({
+  insert: function(){
+    return true;
+  },
+  update: function(){
+    return true;
+  },
+  remove: function(){
+    return true;
+  }
+});

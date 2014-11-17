@@ -19,6 +19,17 @@ Router.route('/',{
   }
 });
 
-Router.route('/profile', function () {
-  this.render('Profile');
+Router.route('/profile',{
+  waitOn: function () {
+    return Meteor.subscribe('images');
+  },
+
+  fastRender: true,
+
+  action: function () {
+    if (this.ready())
+      this.render('Profile');
+    else
+      this.render('Loading');
+  }
 });
