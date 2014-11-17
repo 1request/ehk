@@ -1,6 +1,7 @@
 Router.configure({
   layoutTemplate: 'ApplicationLayout',
-  notFoundTemplate: 'NotFoundPage'
+  notFoundTemplate: 'NotFoundPage',
+  loadingTemplate: 'Loading'
 });
 
 Router.route('/',{
