@@ -8,9 +8,9 @@ less
 nemo64:bootstrap
 iron:router
 accounts-ui
-mrt:font-awesome-4-less
 accounts-password
 joshowens:accounts-entry
 meteorhacks:fast-render
 sacha:spin
+natestrauser:font-awesome
 
