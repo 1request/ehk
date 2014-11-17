@@ -9,6 +9,8 @@ Router.route('/',{
     return Meteor.subscribe('profiles');
   },
 
+  fastRender: true,
+
   action: function () {
     if (this.ready())
       this.render('Home');
