@@ -4,8 +4,6 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
-insecure
 less
 nemo64:bootstrap
 iron:router
@@ -14,4 +12,5 @@ mrt:font-awesome-4-less
 accounts-password
 joshowens:accounts-entry
 meteorhacks:fast-render
+sacha:spin
 

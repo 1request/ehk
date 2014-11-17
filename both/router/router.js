@@ -3,8 +3,17 @@ Router.configure({
   notFoundTemplate: 'NotFoundPage'
 });
 
-Router.route('/', function () {
-  this.render('Home');
+Router.route('/',{
+  waitOn: function () {
+    return Meteor.subscribe('userData');
+  },
+
+  action: function () {
+    if (this.ready())
+      this.render('Home');
+    else
+      this.render('Loading');
+  }
 });
 
 Router.route('/profile', function () {
