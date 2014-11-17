@@ -8,7 +8,7 @@ if (Meteor.users.find().count() === 0){
     image: '/images/victor.jpg'
   };
 
-  Profiles.insert(profile);
+  profileId = Profiles.insert(profile);
 
   profile = {
     name: "Harry Ng",

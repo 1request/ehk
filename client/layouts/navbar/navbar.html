@@ -1,6 +1,6 @@
 <template name="Navbar">
   <nav class="navbar navbar-default navbar-static-top" role="navigation">
-    <div class="container-fluid">
+    <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
@@ -26,19 +26,15 @@
 
         <ul class="nav navbar-nav navbar-right">
         {{#if currentUser}}
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img alt="Profile image" class="navbar-profile-image" src="{{currentUser.profile.image}}"><span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="{{pathFor 'profile'}}">Edit Profile</a></li>
-            <li class="divider"></li>
-            <li><a href="{{pathFor 'entrySignOut'}}">Logout</a></li>
-          </ul>
-        </li>
+          <li><button class="btn btn-embossed btn-primary navbar-btn editProfile" type="button">
+            Edit Profile
+          </button></li>
+          <li><a href="{{pathFor 'entrySignOut'}}">Logout</a></li>
         {{else}}
           <li><button class="btn btn-embossed btn-primary navbar-btn entrySignUp" type="button">
             Create Account
           </button></li>
-          <li><a href="{{pathFor 'entrySignIn'}}">Sign In</a></li>
+          <li><a href="{{pathFor 'entrySignIn'}}">or Sign In</a></li>
         {{/if}}
         </ul>
       </div>
