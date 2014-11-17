@@ -1,9 +1,18 @@
 <template name="BusinessCard">
-  <div class="alert">
-    <h4>{{profile.name}}</h4>
-    <p>{{profile.pitch}}</p>
-    <span class="label label-primary">JavaScript</span>
-    <span class="label label-primary">MeteorJS</span>
-    <span class="label label-primary">AngularJS</span>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="col-sm-4">
+        <img class="profile-image" src="{{profile.image}}">
+      </div>
+      <div class="col-sm-8">
+        <h4>{{profile.name}}</h4>
+        <p>{{profile.pitch}}</p>
+        <div class="panel-footer">
+          <span class="label label-primary">JavaScript</span>
+          <span class="label label-primary">MeteorJS</span>
+          <span class="label label-primary">AngularJS</span>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
