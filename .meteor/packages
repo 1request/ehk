@@ -17,4 +17,4 @@ aldeed:simple-schema
 aldeed:collection2
 cfs:standard-packages
 cfs:gridfs
-cfs:filesystem
+
