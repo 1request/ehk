@@ -6,7 +6,7 @@ Router.configure({
 
 Router.route('/',{
   waitOn: function () {
-    return Meteor.subscribe('userData');
+    return Meteor.subscribe('profiles');
   },
 
   action: function () {

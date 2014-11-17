@@ -12,11 +12,15 @@ if (Meteor.users.find().count() === 0){
     profile: profile
   });
 
+  Profiles.insert(profile);
+
   profile = {
     name: "Harry Ng",
     pitch: "I am an instructor",
     image: '/images/harry.jpg'
   };
+
+  Profiles.insert(profile);
 
   Meteor.users.insert({
     profile: profile
@@ -31,4 +35,6 @@ if (Meteor.users.find().count() === 0){
   Meteor.users.insert({
     profile: profile
   });
+
+  Profiles.insert(profile);
 }

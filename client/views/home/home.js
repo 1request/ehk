@@ -1,5 +1,5 @@
 Template.Home.helpers({
-  users: function(){
-    return Meteor.users.find({},{sort: {createdAt: -1}} );
+  profiles: function(){
+    return Profiles.find().fetch();
   }
 });
