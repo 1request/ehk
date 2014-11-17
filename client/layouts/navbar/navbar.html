@@ -1,5 +1,4 @@
 <template name="Navbar">
-<!-- Static navbar -->
   <nav class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
@@ -9,7 +8,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img class="navbar-logo" alt="EHK logo" src="/images/logo.png">
         </a>
       </div>
@@ -21,12 +20,22 @@
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
 
-        <button type="button" class="btn btn-default navbar-btn">Create Account</button>
-
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">or Sign In</a></li>
+        {{#if currentUser}}
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{currentUser.profile.name}} <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="{{pathFor 'profile'}}">Edit Profile</a></li>
+            <li class="divider"></li>
+            <li><a href="{{pathFor 'entrySignOut'}}">Logout</a></li>
+          </ul>
+        </li>
+        {{else}}
+          <li><a href="{{pathFor 'entrySignUp'}}">Create Account</a></li>
+          <li><a href="{{pathFor 'entrySignIn'}}">Sign In</a></li>
+        {{/if}}
         </ul>
-      </div><!--/.nav-collapse -->
+      </div>
     </div>
   </nav>
 </template>
