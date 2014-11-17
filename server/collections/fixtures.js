@@ -8,10 +8,6 @@ if (Meteor.users.find().count() === 0){
     image: '/images/victor.jpg'
   };
 
-  Meteor.users.insert({
-    profile: profile
-  });
-
   Profiles.insert(profile);
 
   profile = {
@@ -22,19 +18,11 @@ if (Meteor.users.find().count() === 0){
 
   Profiles.insert(profile);
 
-  Meteor.users.insert({
-    profile: profile
-  });
-
   profile = {
     name: "Billy Yuan",
     pitch: "I am an entrepreneur",
     image: '/images/billy.jpg'
   };
-
-  Meteor.users.insert({
-    profile: profile
-  });
 
   Profiles.insert(profile);
 }

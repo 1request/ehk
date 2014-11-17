@@ -1,5 +1,5 @@
 Template.Home.helpers({
   profiles: function(){
-    return Profiles.find().fetch();
+    return Profiles.find({}, {sort: {createdAt: -1}} );
   }
 });
