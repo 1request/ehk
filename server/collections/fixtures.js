@@ -4,7 +4,8 @@ if (Meteor.users.find().count() === 0){
 
   profile = {
     name: "Victor Leung",
-    pitch: "I am a web developer"
+    pitch: "I am a web developer",
+    image: '/images/victor.jpg'
   };
 
   Meteor.users.insert({
@@ -13,7 +14,8 @@ if (Meteor.users.find().count() === 0){
 
   profile = {
     name: "Harry Ng",
-    pitch: "I am an instructor"
+    pitch: "I am an instructor",
+    image: '/images/harry.jpg'
   };
 
   Meteor.users.insert({
@@ -22,7 +24,8 @@ if (Meteor.users.find().count() === 0){
 
   profile = {
     name: "Billy Yuan",
-    pitch: "I am an entrepreneur"
+    pitch: "I am an entrepreneur",
+    image: '/images/billy.jpg'
   };
 
   Meteor.users.insert({
