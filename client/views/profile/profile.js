@@ -10,6 +10,7 @@ Template.Profile.events({
             "profile.image": "/cfs/files/images/" + fileObj._id
           };
           Meteor.users.update(userId, {$set: imagesURL});
+          window.location.reload();
         }
       });
     });
