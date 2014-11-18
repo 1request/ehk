@@ -3,6 +3,9 @@ Meteor.methods({
 
     var user = Meteor.user();
     var now = new Date();
+    var profileId;
+
+    var existingProfile = Profiles.findOne({userId: userId});
 
     if (!user){
       console.log('Please login to save profile');
@@ -21,7 +24,17 @@ Meteor.methods({
       createdAt: now
     });
 
-    var profileId = Profiles.insert(extendedProfile);
+    if (existingProfile){
+      Profiles.update(existingProfile._id, {$set: extendedProfile}, function(error){
+        if (error){
+          console.log(error);
+        } else {
+          profileId = existingProfile._id;
+        }
+      });
+    } else {
+      profileId = Profiles.insert(extendedProfile);
+    }
 
     return profileId;
   }
