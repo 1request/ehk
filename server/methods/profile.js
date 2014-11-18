@@ -19,7 +19,7 @@ Meteor.methods({
       console.log('please fill in elevator pitch');
     }
 
-    var extendedProfile = _.extend(_.pick(profile, 'name', 'pitch', 'image', 'linkedIn'), {
+    var extendedProfile = _.extend(_.pick(profile, 'name', 'pitch', 'image', 'linkedIn', 'firstTag', 'secondTag', 'thirdTag'), {
       userId: userId,
       createdAt: now
     });

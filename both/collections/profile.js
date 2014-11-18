@@ -33,7 +33,26 @@ ProfileSchema = new SimpleSchema({
     type: String,
     label: "Link to linked profile",
     optional: true,
-  }
+  },
+  firstTag: {
+    type: String,
+    label: "First Tag",
+    max: 50,
+    optional: true
+  },
+  secondTag: {
+    type: String,
+    label: "Second Tag",
+    max: 50,
+    optional: true
+  },
+  thirdTag: {
+    type: String,
+    label: "Third Tag",
+    max: 50,
+    optional: true
+  },
+
 });
 
 Profiles.attachSchema(ProfileSchema);

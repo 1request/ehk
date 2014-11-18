@@ -33,11 +33,18 @@
               <input name="linkedIn" type="link" class="form-control" placeholder="e.g. https://www.linkedin.com/in/entreprenuerhk" value="{{currentUser.profile.linkedIn}}">
             </div>
             <hr>
-            <ul class="list-inline">
-              <li><h4><span class="label label-primary">JavaScript</span></h4></li>
-              <li><h4><span class="label label-primary">MeteorJS</span></h4></li>
-              <li><h4><span class="label label-primary">AngularJS</span></h4></li>
-            </ul>
+            <div class="form-group">
+              <label for="firstTag">Please choose your first tag</label>
+              <input name="firstTag" type="label" class="form-control" placeholder="e.g. Web Development" value="{{currentUser.profile.firstTag}}">
+            </div>
+            <div class="form-group">
+              <label for="secondTag">Please choose your second tag</label>
+              <input name="secondTag" type="label" class="form-control" placeholder="e.g. Product Management" value="{{currentUser.profile.secondTag}}">
+            </div>
+            <div class="form-group">
+              <label for="thirdTag">Please choose your third tag</label>
+              <input name="thirdTag" type="label" class="form-control" placeholder="e.g. Marketing" value="{{currentUser.profile.thirdTag}}">
+            </div>
           </div>
         </div>
       </div>
