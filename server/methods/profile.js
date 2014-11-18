@@ -36,6 +36,12 @@ Meteor.methods({
       profileId = Profiles.insert(extendedProfile);
     }
 
+    Meteor.users.update(userId, {$set: {profile: profile}}, function(error) {
+      if (error) {
+        console.log(error);
+      }
+    });
+
     return profileId;
   }
 });

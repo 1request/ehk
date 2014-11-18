@@ -22,15 +22,15 @@
           <div class="col-sm-8">
             <div class="form-group">
               <label for="name">Profile Name</label>
-              <input name="name" type="name" class="form-control" placeholder="Enter your name">
+              <input name="name" type="name" class="form-control" placeholder="Enter your name" value="{{currentUser.profile.name}}">
             </div>
             <div class="form-group">
               <label for="pitch">Elevator pitch</label>
-              <textarea name="pitch" class="form-control" rows="3"></textarea>
+              <textarea name="pitch" class="form-control" rows="3">{{currentUser.profile.pitch}}</textarea>
             </div>
             <div class="form-group">
               <label for="linkedIn">LinkedIn Profile</label>
-              <input name="linkedIn" type="link" class="form-control" placeholder="e.g. https://www.linkedin.com/in/entreprenuerhk">
+              <input name="linkedIn" type="link" class="form-control" placeholder="e.g. https://www.linkedin.com/in/entreprenuerhk" value="{{currentUser.profile.linkedIn}}">
             </div>
             <hr>
             <ul class="list-inline">
