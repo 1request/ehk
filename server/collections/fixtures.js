@@ -15,7 +15,8 @@ if (Meteor.users.find().count() === 0){
   extendedProfile =  _.extend(_.pick(profile, 'name', 'image'), {
       pitch: "I'm a web developer",
       userId: userId,
-      createdAt: now
+      createdAt: now,
+      linkedIn: 'http://hk.linkedin.com/in/victorleungtw'
     });
 
   Profiles.insert(extendedProfile);
@@ -30,7 +31,8 @@ if (Meteor.users.find().count() === 0){
   extendedProfile =  _.extend(_.pick(profile, 'name', 'image'), {
       pitch: "I'm a lead instructor",
       userId: userId,
-      createdAt: now
+      createdAt: now,
+      linkedIn: 'http://hk.linkedin.com/in/harryng'
     });
 
   Profiles.insert(extendedProfile);
@@ -45,7 +47,8 @@ if (Meteor.users.find().count() === 0){
   extendedProfile =  _.extend(_.pick(profile, 'name', 'image'), {
       pitch: "I'm a serial entrepreneur",
       userId: userId,
-      createdAt: now
+      createdAt: now,
+      linkedIn: 'https://hk.linkedin.com/pub/billy-yuen/18/426/771'
     });
 
   Profiles.insert(extendedProfile);

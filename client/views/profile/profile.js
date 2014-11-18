@@ -26,6 +26,7 @@ Template.Profile.events({
     var profile = {
       name: $(e.target).find('[name=name]').val(),
       pitch: $(e.target).find('[name=pitch]').val(),
+      linkedIn: $(e.target).find('[name=linkedIn]').val(),
       image: userImage
     };
 

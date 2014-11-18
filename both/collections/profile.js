@@ -28,6 +28,11 @@ ProfileSchema = new SimpleSchema({
     type: Date,
     label: "Created profile date",
     optional: true,
+  },
+  linkedIn: {
+    type: String,
+    label: "Link to linked profile",
+    optional: true,
   }
 });
 
