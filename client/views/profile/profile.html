@@ -42,17 +42,28 @@
             </div>
             <hr>
             <div class="form-group">
+              <label for="userTags">Please choose or create 3 tags about yourself</label>
+              <div class="select2-container select2-container-multi" id="tagsSelect" style="width: 300px;">
+                <ul class="select2-choices">
+                  <li class="select2-search-field">
+                    <label for="s2id_autogen20" class="select2-offscreen"></label>
+                    <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" id="tagsInput" tabindex="0" maxlength="10" placeholder="" style="width: 10px;" aria-activedescendant="select2-result-label-1864">
+                  </li>
+               </ul>
+              </div>
+            </div>
+<!--             <div class="form-group">
               <label for="firstTag">Please choose your first tag</label>
-              <input name="firstTag" type="label" class="form-control" placeholder="e.g. Web Development" value="{{currentUser.profile.firstTag}}">
+              <input name="firstTag" type="label" class="form-control" placeholder="e.g. Job title" value="{{currentUser.profile.firstTag}}">
             </div>
             <div class="form-group">
               <label for="secondTag">Please choose your second tag</label>
-              <input name="secondTag" type="label" class="form-control" placeholder="e.g. Product Management" value="{{currentUser.profile.secondTag}}">
+              <input name="secondTag" type="label" class="form-control" placeholder="e.g. Programming" value="{{currentUser.profile.secondTag}}">
             </div>
             <div class="form-group">
               <label for="thirdTag">Please choose your third tag</label>
-              <input name="thirdTag" type="label" class="form-control" placeholder="e.g. Marketing" value="{{currentUser.profile.thirdTag}}">
-            </div>
+              <input name="thirdTag" type="label" class="form-control" placeholder="e.g. Finance" value="{{currentUser.profile.thirdTag}}">
+            </div> -->
           </div>
         </div>
       </div>

@@ -30,11 +30,14 @@ Template.Profile.events({
       pitch2: $(e.target).find('[name=pitch2]').val(),
       pitch3: $(e.target).find('[name=pitch3]').val(),
       linkedIn: $(e.target).find('[name=linkedIn]').val(),
-      firstTag: $(e.target).find('[name=firstTag]').val(),
-      secondTag: $(e.target).find('[name=secondTag]').val(),
-      thirdTag: $(e.target).find('[name=thirdTag]').val(),
+      // firstTag: $(e.target).find('[name=firstTag]').val(),
+      // secondTag: $(e.target).find('[name=secondTag]').val(),
+      // thirdTag: $(e.target).find('[name=thirdTag]').val(),
       image: userImage
     };
+
+    var tags = $('#tagsInput').val();
+    console.log(tags);
 
     Meteor.call('saveProfile', profile, userId, function (error, result) {
       if (error) {
@@ -44,5 +47,17 @@ Template.Profile.events({
       }
     });
 
-  }
+  },
 });
+
+
+Template.Profile.rendered = function(){
+
+  var allTags = Tags.find().fetch();
+  var allTagsName = _.pluck(allTags, 'name');
+
+  $("#tagsSelect").select2({
+    tags: allTagsName,
+    maximumSelectionSize: 3,
+    tokenSeparators: [",", " "]});
+};

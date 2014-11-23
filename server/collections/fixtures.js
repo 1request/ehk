@@ -144,6 +144,51 @@ if (Tags.find().count() === 0){
     name: 'Founded startups',
     category: 'finance'
   });
+
+  Tags.insert({
+    name: 'JavaScript',
+    category: 'programming'
+  });
+
+  Tags.insert({
+    name: 'MeteorJS',
+    category: 'programming'
+  });
+
+  Tags.insert({
+    name: 'AngularJS',
+    category: 'programming'
+  });
+
+  Tags.insert({
+    name: 'Ruby',
+    category: 'programming'
+  });
+
+  Tags.insert({
+    name: 'Rails',
+    category: 'programming'
+  });
+
+  Tags.insert({
+    name: 'D3',
+    category: 'programming'
+  });
+
+  Tags.insert({
+    name: 'Product Management',
+    category: 'finance'
+  });
+
+  Tags.insert({
+    name: 'Agile Development',
+    category: 'finance'
+  });
+
+  Tags.insert({
+    name: 'Marketing',
+    category: 'finance'
+  });
 }
 
 
