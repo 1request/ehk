@@ -21,7 +21,10 @@ Router.route('/',{
 
 Router.route('/profile',{
   waitOn: function () {
-    return Meteor.subscribe('images');
+    return [
+      Meteor.subscribe('images'),
+      Meteor.subscribe('tags'),
+     ];
   },
 
   fastRender: true,

@@ -69,7 +69,7 @@ if (Meteor.users.find().count() === 0){
   Profiles.insert(extendedProfile);
 }
 
-if (Meteor.users.find().count() === 0){
+if (Tags.find().count() === 0){
   Tags.insert({
     programming: ['machine learning', 'AI', 'Adobe Photoshop', 'Adobe Illustrator', 'C++', 'Java', 'Silicon Valley', 'Google'],
     finance: ['MBA', 'CFA', 'CPA', 'bookkeeping', 'accounting', 'Social media expert', 'Founded startups']
