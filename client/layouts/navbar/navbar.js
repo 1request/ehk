@@ -7,12 +7,12 @@ Template.Navbar.events({
   },
   'keydown input#search': function(e){
     var tag = $(e.target).find('[name=search]').val();
-    console.log(tag);
+    Session.set('query', tag);
   },
   'submit form': function(e){
     e.preventDefault();
     var tag = $(e.target).find('[name=search]').val();
-    console.log(tag);
+    Session.set('query', tag);
   }
 });
 
