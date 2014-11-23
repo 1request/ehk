@@ -24,20 +24,22 @@ Template.Profile.events({
 
     var userImage = user.profile.image;
 
+    var tags = $('#tagsSelect').val().split(',');
+
     var profile = {
       name: $(e.target).find('[name=name]').val(),
       pitch1: $(e.target).find('[name=pitch1]').val(),
       pitch2: $(e.target).find('[name=pitch2]').val(),
       pitch3: $(e.target).find('[name=pitch3]').val(),
       linkedIn: $(e.target).find('[name=linkedIn]').val(),
-      // firstTag: $(e.target).find('[name=firstTag]').val(),
-      // secondTag: $(e.target).find('[name=secondTag]').val(),
-      // thirdTag: $(e.target).find('[name=thirdTag]').val(),
+      firstTag: tags[0],
+      secondTag: tags[1],
+      thirdTag: tags[2],
       image: userImage
     };
 
-    var tags = $('#tagsInput').val();
-    console.log(tags);
+    var tags = $('#tagsSelect').val();
+    console.log(tags.slice(','));
 
     Meteor.call('saveProfile', profile, userId, function (error, result) {
       if (error) {
