@@ -6,3 +6,13 @@ Template.Navbar.events({
     Router.go('/profile');
   }
 });
+
+Template.Navbar.helpers({
+  profiles: function(){
+    return Profiles.find().fetch().map(function(it){ return it.name; });
+  }
+});
+
+Template.Navbar.rendered = function(){
+  Meteor.typeahead.inject();
+};

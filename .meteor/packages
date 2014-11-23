@@ -19,4 +19,5 @@ cfs:standard-packages
 cfs:gridfs
 mrt:moment
 natestrauser:select2
+sergeyt:typeahead
 

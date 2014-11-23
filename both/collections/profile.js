@@ -23,13 +23,13 @@ ProfileSchema = new SimpleSchema({
     type: String,
     label: "Elevator Pitch 2",
     max: 140,
-    optional: false,
+    optional: true,
   },
   pitch3: {
     type: String,
     label: "Elevator Pitch 3",
     max: 140,
-    optional: false,
+    optional: true,
   },
   image: {
     type: String,
