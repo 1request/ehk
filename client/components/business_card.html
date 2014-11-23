@@ -1,12 +1,9 @@
 <template name="BusinessCard">
-  <div class="row">
+  <div class="col-sm-4">
     <div class="panel panel-default">
       <div class="panel-body">
-        <div class="col-sm-4">
           <div class="profile-image-centered img-thumbnail center-block" style="background-image: url('{{image}}')">
           </div>
-        </div>
-        <div class="col-sm-8">
           <h4>{{name}} <a href="{{linkedIn}}" class="pull-right" target="blank"><i class="fa fa-linkedin-square"></i></a></h4>
           <p>{{pitch}}</p>
           <ul class="list-inline">
@@ -15,7 +12,6 @@
             <li><h4><span class="label label-primary">{{thirdTag}}</span></h4></li>
           </ul>
           <p class="pull-right small text-muted">Updated at {{timeAgo createdAt}}</p>
-        </div>
        </div>
     </div>
   </div>
