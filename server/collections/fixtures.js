@@ -71,7 +71,94 @@ if (Meteor.users.find().count() === 0){
 
 if (Tags.find().count() === 0){
   Tags.insert({
-    programming: ['machine learning', 'AI', 'Adobe Photoshop', 'Adobe Illustrator', 'C++', 'Java', 'Silicon Valley', 'Google'],
-    finance: ['MBA', 'CFA', 'CPA', 'bookkeeping', 'accounting', 'Social media expert', 'Founded startups']
+    name: 'MBA',
+    category: 'finance'
+  });
+
+  Tags.insert({
+    name: 'CFA',
+    category: 'finance'
+  });
+
+  Tags.insert({
+    name: 'CPA',
+    category: 'finance'
+  });
+
+  Tags.insert({
+    name: 'bookkeeping',
+    category: 'finance'
+  });
+
+  Tags.insert({
+    name: 'accounting',
+    category: 'finance'
+  });
+
+  Tags.insert({
+    name: 'machine learning',
+    category: 'programming'
+  });
+
+  Tags.insert({
+    name: 'AI',
+    category: 'programming'
+  });
+
+  Tags.insert({
+    name: 'Social media expert',
+    category: 'finance'
+  });
+
+  Tags.insert({
+    name: 'Adobe Photoshop',
+    category: 'programming'
+  });
+
+  Tags.insert({
+    name: 'Adobe Illustrator',
+    category: 'programming'
+  });
+
+  Tags.insert({
+    name: 'C++',
+    category: 'programming'
+  });
+
+  Tags.insert({
+    name: 'Java',
+    category: 'programming'
+  });
+
+  Tags.insert({
+    name: 'Silicon Valley',
+    category: 'programming'
+  });
+
+  Tags.insert({
+    name: 'Google',
+    category: 'programming'
+  });
+
+  Tags.insert({
+    name: 'Founded startups',
+    category: 'finance'
   });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

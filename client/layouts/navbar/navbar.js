@@ -8,8 +8,8 @@ Template.Navbar.events({
 });
 
 Template.Navbar.helpers({
-  profiles: function(){
-    return Profiles.find().fetch().map(function(it){ return it.name; });
+  tags: function(){
+    return Tags.find().fetch().map(function(it){ return it.name; });
   }
 });
 

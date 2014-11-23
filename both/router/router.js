@@ -6,7 +6,10 @@ Router.configure({
 
 Router.route('/',{
   waitOn: function () {
-    return Meteor.subscribe('profiles');
+    return [
+      Meteor.subscribe('profiles'),
+      Meteor.subscribe('tags'),
+    ];
   },
 
   fastRender: true,
