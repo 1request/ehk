@@ -38,8 +38,31 @@ Template.Profile.events({
       image: userImage
     };
 
-    var tags = $('#tagsSelect').val();
-    console.log(tags.slice(','));
+    var allTags = Tags.find().fetch();
+    var allTagsName = _.pluck(allTags, 'name');
+
+    var firstInputTagMatch = _.contains(allTagsName, tags[0]);
+    var secondInputTagMatch = _.contains(allTagsName, tags[1]);
+    var thirdInputTagMatch = _.contains(allTagsName, tags[2]);
+
+    if (!firstInputTagMatch){
+      Tags.insert({
+        name: tags[0]
+      });
+    }
+
+    if (!secondInputTagMatch){
+      Tags.insert({
+        name: tags[1]
+      });
+    }
+
+    if (!thirdInputTagMatch){
+      Tags.insert({
+        name: tags[2]
+      });
+    }
+
 
     Meteor.call('saveProfile', profile, userId, function (error, result) {
       if (error) {
