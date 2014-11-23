@@ -26,7 +26,9 @@ Template.Profile.events({
 
     var profile = {
       name: $(e.target).find('[name=name]').val(),
-      pitch: $(e.target).find('[name=pitch]').val(),
+      pitch1: $(e.target).find('[name=pitch1]').val(),
+      pitch2: $(e.target).find('[name=pitch2]').val(),
+      pitch3: $(e.target).find('[name=pitch3]').val(),
       linkedIn: $(e.target).find('[name=linkedIn]').val(),
       firstTag: $(e.target).find('[name=firstTag]').val(),
       secondTag: $(e.target).find('[name=secondTag]').val(),
