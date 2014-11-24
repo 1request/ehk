@@ -30,6 +30,10 @@ Router.route('/profile',{
      ];
   },
 
+  data: function () {
+    return Meteor.user();
+  },
+
   fastRender: true,
 
   action: function () {
