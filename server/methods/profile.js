@@ -15,11 +15,11 @@ Meteor.methods({
       console.log('please fill in profile name');
     }
 
-    if (!profile.pitch){
+    if (!profile.pitch1){
       console.log('please fill in elevator pitch');
     }
 
-    var extendedProfile = _.extend(_.pick(profile, 'name', 'pitch1', 'pitch1', 'pitch1', 'image', 'linkedIn', 'firstTag', 'secondTag', 'thirdTag'), {
+    var extendedProfile = _.extend(_.pick(profile, 'name', 'pitch1', 'pitch2', 'pitch3', 'image', 'linkedIn', 'firstTag', 'secondTag', 'thirdTag'), {
       userId: userId,
       createdAt: now
     });

@@ -27,7 +27,7 @@ if (Meteor.users.find().count() === 0){
   Profiles.insert(extendedProfile);
 
   profile = {
-    name: "Harry ng",
+    name: "Harry Ng",
     image: '/images/harry.jpg'
   };
 
