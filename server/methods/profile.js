@@ -5,6 +5,8 @@ Meteor.methods({
     var now = new Date();
     var profileId;
 
+    var username = slugify(profile.name);
+
     var existingProfile = Profiles.findOne({userId: userId});
 
     if (!user){
@@ -21,6 +23,7 @@ Meteor.methods({
 
     var extendedProfile = _.extend(_.pick(profile, 'name', 'pitch1', 'pitch2', 'pitch3', 'image', 'linkedIn', 'firstTag', 'secondTag', 'thirdTag'), {
       userId: userId,
+      username: username,
       createdAt: now
     });
 

@@ -13,6 +13,7 @@ if (Meteor.users.find().count() === 0){
   userId = Meteor.users.insert(profile);
 
   extendedProfile =  _.extend(_.pick(profile, 'name', 'image'), {
+      username: "victorleungtw",
       pitch1: "I'm a web developer",
       pitch2: "I'm a JavaScript expert",
       pitch3: "I love Meteor.js",
@@ -34,6 +35,7 @@ if (Meteor.users.find().count() === 0){
   userId = Meteor.users.insert(profile);
 
   extendedProfile =  _.extend(_.pick(profile, 'name', 'image'), {
+      username: "harryng",
       pitch1: "I'm a lead instructor.",
       pitch2: "I am a Ruby on Rails expert.",
       pitch3: "I am a good teacher.",
@@ -55,6 +57,7 @@ if (Meteor.users.find().count() === 0){
   userId = Meteor.users.insert(profile);
 
   extendedProfile =  _.extend(_.pick(profile, 'name', 'image'), {
+      username: "billy-yuen",
       pitch1: "I'm a serial entrepreneur.",
       pitch2: "I contribute to the startup community.",
       pitch3: "I build school in Philiphine.",

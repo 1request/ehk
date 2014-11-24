@@ -39,3 +39,25 @@ Router.route('/profile',{
       this.render('Loading');
   }
 });
+
+Router.route('/profile/:username',{
+  waitOn: function () {
+    return [
+      Meteor.subscribe('publicProfile', this.params.username),
+      Meteor.subscribe('tags')
+     ];
+  },
+
+  data: function () {
+    return Profiles.findOne({username: this.params.username});
+  },
+
+  fastRender: true,
+
+  action: function () {
+    if (this.ready())
+      this.render('PublicProfile');
+    else
+      this.render('Loading');
+  }
+});

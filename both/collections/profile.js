@@ -13,6 +13,12 @@ ProfileSchema = new SimpleSchema({
     max: 50,
     optional: false
   },
+  username: {
+    type: String,
+    label: "Slug Name",
+    max: 50,
+    optional: true
+  },
   pitch1: {
     type: String,
     label: "Elevator Pitch 1",
