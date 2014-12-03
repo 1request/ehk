@@ -4,9 +4,17 @@ html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 70px;
+  margin-bottom: 400px;
+}
+
+@media (min-width: @screen-sm-min) {
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 200px;
+  }
 }
 
 .footer {
