@@ -17,8 +17,16 @@ Meteor.methods({
       console.log('please fill in profile name');
     }
 
-    if (!profile.pitch1){
-      console.log('please fill in elevator pitch');
+    if (profile.pitch1.length > 140){
+      console.log('Too many words in your first pitch');
+    }
+
+    if (profile.pitch2.length > 140){
+      console.log('Too many words in your second pitch');
+    }
+
+    if (profile.pitch3.length > 140){
+      console.log('Too many words in your third pitch');
     }
 
     var extendedProfile = _.extend(_.pick(profile, 'name', 'pitch1', 'pitch2', 'pitch3', 'image', 'linkedIn', 'firstTag', 'secondTag', 'thirdTag'), {
