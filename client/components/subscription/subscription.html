@@ -1,17 +1,20 @@
-<template name="subscription">
+<template name="MailChimpListSubscribe">
   <div class="dialog subscription-bar">
     <div class="container">
        Like to receive new candidate alert? <span class="text-primary">Sign up to our newsletter</span>
-      <form class="form-inline">
-        <div class="form-group">
+      {{#if message}}
+        <p class="message">{{message}}</p>
+      {{/if}}
+      <form class="form-inline" id="subscribeForm">
+<!--         <div class="form-group">
           <label class="sr-only" for="subscriptionName">Your name</label>
           <input type="text" class="form-control flat" id="dialogExampleInputPass1" placeholder="Your name">
-        </div>
+        </div> -->
         <div class="form-group">
           <label class="sr-only" for="subscriptionEmail">E-mail</label>
-          <input type="email" class="form-control flat" id="dialogExampleInputEmail1" placeholder="E-mail Address">
+          <input type="email" class="form-control flat email" id="subscriptionEmail" placeholder="E-mail Address">
         </div>
-        <button class="btn btn-primary btn-wide mll" data-dismiss="alert">
+        <button class="btn btn-primary btn-wide mll subscribe" data-dismiss="alert">
           <i class="fui-mail"></i>
           Subscribe
         </button>
