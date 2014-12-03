@@ -32,9 +32,9 @@ Template.Profile.events({
       pitch2: $(e.target).find('[name=pitch2]').val(),
       pitch3: $(e.target).find('[name=pitch3]').val(),
       linkedIn: $(e.target).find('[name=linkedIn]').val(),
-      firstTag: tags[0],
-      secondTag: tags[1],
-      thirdTag: tags[2],
+      firstTag: tags[0] || 'Not selected',
+      secondTag: tags[1] || 'Not selected',
+      thirdTag: tags[2] || 'Not selected',
       image: userImage
     };
 
@@ -45,19 +45,25 @@ Template.Profile.events({
     var secondInputTagMatch = _.contains(allTagsName, tags[1]);
     var thirdInputTagMatch = _.contains(allTagsName, tags[2]);
 
-    if (!firstInputTagMatch){
+    console.log('this is first tag', tags[0]);
+
+    if (tags[0] && !firstInputTagMatch){
       Tags.insert({
         name: tags[0]
       });
     }
 
-    if (!secondInputTagMatch){
+    console.log('this is second tag', tags[1]);
+
+    if (tags[1] && !secondInputTagMatch){
       Tags.insert({
         name: tags[1]
       });
     }
 
-    if (!thirdInputTagMatch){
+    console.log('this is third tag', tags[2]);
+
+    if (tags[2] && !thirdInputTagMatch){
       Tags.insert({
         name: tags[2]
       });
