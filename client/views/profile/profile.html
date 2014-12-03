@@ -25,16 +25,16 @@
               <input name="name" type="name" class="form-control" placeholder="Enter your name" value="{{currentUser.profile.name}}">
             </div>
             <div class="form-group">
-              <label for="pitch">First Thing About Me  (limit 140-character)</label>
-              <textarea name="pitch1" class="form-control" rows="3">{{currentUser.profile.pitch1}}</textarea>
+              <label for="pitch">First Thing About Me  (<span id="message-count1">140 characters remaining</span>)</label>
+              <textarea id="pitch1" name="pitch1" class="form-control" rows="3">{{currentUser.profile.pitch1}}</textarea>
             </div>
             <div class="form-group">
-              <label for="pitch">Second Thing About Me (limit 140-character)</label>
-              <textarea name="pitch2" class="form-control" rows="3">{{currentUser.profile.pitch2}}</textarea>
+              <label for="pitch">Second Thing About Me  (<span id="message-count2">140 characters remaining</span>) {{countWords2}}</label>
+              <textarea id="pitch2" name="pitch2" class="form-control" rows="3">{{currentUser.profile.pitch2}}</textarea>
             </div>
             <div class="form-group">
-              <label for="pitch">Third Thing About Me (limit 140-character)</label>
-              <textarea name="pitch3" class="form-control" rows="3">{{currentUser.profile.pitch3}}</textarea>
+              <label for="pitch">Third Thing About Me  (<span id="message-count3">140 characters remaining</span>) {{countWords3}}</label>
+              <textarea id="pitch3" name="pitch3" class="form-control" rows="3">{{currentUser.profile.pitch3}}</textarea>
             </div>
             <div class="form-group">
               <label for="linkedIn">LinkedIn Profile</label>

@@ -86,4 +86,28 @@ Template.Profile.rendered = function(){
     tags: allTagsName,
     maximumSelectionSize: 3,
     tokenSeparators: [",", " "]});
+
+  var pitch1 = document.getElementById("pitch1");
+  var pitch2 = document.getElementById("pitch2");
+  var pitch3 = document.getElementById("pitch3");
+
+  var message1 = document.getElementById("message-count1");
+  var message2 = document.getElementById("message-count2");
+  var message3 = document.getElementById("message-count3");
+
+  var maxLength = 140;
+  var checkLength = function() {
+    if(pitch1.value.length < maxLength) {
+        message1.innerHTML = (maxLength-pitch1.value.length) + " characters remainging";
+    }
+    if(pitch2.value.length < maxLength) {
+        message2.innerHTML = (maxLength-pitch2.value.length) + " characters remainging";
+    }
+    if(pitch3.value.length < maxLength) {
+        message3.innerHTML = (maxLength-pitch3.value.length) + " characters remainging";
+    }
+  };
+  setInterval(checkLength, 300);
 };
+
+
