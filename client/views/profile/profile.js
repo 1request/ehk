@@ -3,7 +3,7 @@ Template.Profile.events({
     FS.Utility.eachFile(event, function(file) {
       Images.insert(file, function (err, fileObj) {
         if (err){
-          console.log(err);
+          noty({text:err, type:'danger', timeout:2000});
         } else {
           var userId = Meteor.userId();
           var imagesURL = {
@@ -66,8 +66,9 @@ Template.Profile.events({
 
     Meteor.call('saveProfile', profile, userId, function (error, result) {
       if (error) {
-        console.log(error);
+        noty({text:error, type:'danger', timeout:2000});
       } else {
+        noty({text:'Profile saved', type:'success', timeout:2000});
         Router.go('/');
       }
     });
