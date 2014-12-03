@@ -1,15 +1,21 @@
-<template name="MailChimpListSubscribe">
+<template name="subscription">
+
   <div class="dialog subscription-bar">
     <div class="container">
-       Like to receive new candidate alert? <span class="text-primary">Sign up to our newsletter</span>
+      {{> MailChimpListSubscribe}}
+    </div>
+  </div>
+</template>
+
+<!--        Like to receive new candidate alert? <span class="text-primary">Sign up to our newsletter</span>
       {{#if message}}
         <p class="message">{{message}}</p>
       {{/if}}
       <form class="form-inline" id="subscribeForm">
-<!--         <div class="form-group">
+        <div class="form-group">
           <label class="sr-only" for="subscriptionName">Your name</label>
           <input type="text" class="form-control flat" id="dialogExampleInputPass1" placeholder="Your name">
-        </div> -->
+        </div>
         <div class="form-group">
           <label class="sr-only" for="subscriptionEmail">E-mail</label>
           <input type="email" class="form-control flat email" id="subscriptionEmail" placeholder="E-mail Address">
@@ -18,7 +24,4 @@
           <i class="fui-mail"></i>
           Subscribe
         </button>
-      </form>
-    </div>
-  </div>
-</template>
+      </form> -->
