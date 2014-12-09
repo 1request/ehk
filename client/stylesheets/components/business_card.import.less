@@ -6,19 +6,45 @@
 
 .profile-image-centered {
   display: block;
-  width: 178px;
-  height: 178px;
+  width: 80px;
+  height: 80px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.profile-name{
+  font-size: 18px;
+}
+
+.pitch{
+  font-size: 14px;
+}
+
+.tags{
+  font-size: 14px;
+}
+
+@media (min-width: @screen-xs-min) {
+  .profile-image-centered {
+    width: 178px;
+    height: 178px;
+  }
+
+  .profile-name{
+    font-size: 29px;
+  }
+
+  .pitch{
+    font-size: 18px;
+  }
+
+  .tags{
+    font-size: 18px;
+  }
 }
 
 .linkedin{
   color: #069;
 }
 
-.business-card{
-  height: 426px;
-  min-height: 426px;
-  max-height: 426px;
-}
