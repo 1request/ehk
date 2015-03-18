@@ -1,20 +1,20 @@
 Template.Profile.events({
-  'change .myFileInput': function(event, template) {
-    FS.Utility.eachFile(event, function(file) {
-      Images.insert(file, function (err, fileObj) {
-        if (err){
-          noty({text:err, type:'danger', timeout:2000});
-        } else {
-          var userId = Meteor.userId();
-          var imagesURL = {
-            "profile.image": "/cfs/files/images/" + fileObj._id
-          };
-          Meteor.users.update(userId, {$set: imagesURL});
-          window.location.reload();
-        }
-      });
-    });
-  },
+  // 'change .myFileInput': function(event, template) {
+  //   FS.Utility.eachFile(event, function(file) {
+  //     Images.insert(file, function (err, fileObj) {
+  //       if (err){
+  //         noty({text:err, type:'danger', timeout:2000});
+  //       } else {
+  //         var userId = Meteor.userId();
+  //         var imagesURL = {
+  //           "profile.image": "/cfs/files/images/" + fileObj._id
+  //         };
+  //         Meteor.users.update(userId, {$set: imagesURL});
+  //         window.location.reload();
+  //       }
+  //     });
+  //   });
+  // },
   'submit form': function(e){
     e.preventDefault();
 
