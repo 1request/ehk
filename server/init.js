@@ -1,5 +1,8 @@
-UploadServer.init({
-  tmpDir: process.env.PWD + '/public/images/tmp',
-  uploadDir: process.env.PWD + '/public/images',
-  checkCreateDirectories: true //create the directories for you
+//file:/server/init.js
+Meteor.startup(function () {
+  UploadServer.init({
+    tmpDir: process.env.PWD + '/.uploads/tmp',
+    uploadDir: process.env.PWD + '/.uploads/',
+    checkCreateDirectories: true //create the directories for you
+  });
 });
