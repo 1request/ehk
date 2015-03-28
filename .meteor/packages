@@ -15,8 +15,6 @@ sacha:spin
 natestrauser:font-awesome
 aldeed:simple-schema
 aldeed:collection2
-cfs:standard-packages
-cfs:gridfs
 mrt:moment
 natestrauser:select2
 sergeyt:typeahead
